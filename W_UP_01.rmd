@@ -44,18 +44,24 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 ### Plot boxplots
 
 ```{r}
-plot(momheight~Sex,data=davisdata)
+boxplot(pushups~position,data=mydata)
 ```
 
 ### Numerical Descriptive Results
-
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+# Numerical results
+
+```{r}
+favstats(pushups~position,data=mydata)
+```
 ## Inferential Results
 
 <!--State hypothesis clearly. Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc. Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
-
-
+```{r}
+t.test(pushups~position,data=mydata)
+```
+The P value is 0.000009421. Because this number is so small, we reject the null hypothesis. Skill players can do more pushups on average in 2 minutes than can line players.
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason. Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
