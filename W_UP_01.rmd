@@ -46,7 +46,7 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 ```{r}
 boxplot(pushups~position,data=mydata)
 ```
-
+The skill players average more pushups than the line players.
 ### Numerical Descriptive Results
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
@@ -65,4 +65,4 @@ The P value is 0.000009421. Because this number is so small, we reject the null 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason. Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
-
+The original question was is there a difference in the average number of pushups that skill players and line players can do. We did a box plot to show the differences. We did a numerical summary to get the averages. The skill players can do more pushups on average in 2 minutes than can line players.
